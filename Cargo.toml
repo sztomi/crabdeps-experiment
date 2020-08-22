@@ -1,0 +1,19 @@
+[package]
+name = "crabdeps"
+version = "0.1.0"
+authors = ["Tamás Szelei <szelei.t@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+indicatif = "*"
+reqwest = { version = "0.9.24" }
+eyre = "0.4"
+zstd = "0.5.3+zstd.1.4.5"
+tar = "0.4.29"
+clap = "2.33.1"
+dirs = "2.0.2"
+default-env = "0.1.1"
+serde = "1.0.113"
+
+[profile.release]
+lto = true
